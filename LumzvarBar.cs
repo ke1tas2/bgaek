@@ -12,9 +12,7 @@ public class LumzvarBar : MonoBehaviour
         playerStats = FindObjectOfType<PlayerStats>();
         if (playerStats == null)
         {
-            Debug.LogError("LumzvarBar: PlayerStats not found in scene!");
-            enabled = false; // Disable script if PlayerStats isn't found
-            return;
+            
         }
 
         // Subscribe to an event in PlayerStats that fires when Lumzvar changes
